@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Board() {
+export default function Board(props) {
   return (
-    <div>
+    <section className = "board--container">
       
-    </div>
+    </section>
   )
 }

@@ -13,8 +13,8 @@ class App extends Component {
     super(props)
   
     this.state = {
-      justifyData : [],
-      alignData : [],
+      data : [],
+      currentRound : 0,
       isLoading : true
     }
   }
@@ -25,17 +25,17 @@ class App extends Component {
 
   fetch = () => {
       console.log('fetching')
-      axios("https://gist.githubusercontent.com/MaxBSilver/826e01609a4df3ee1a50c9fed01e355b/raw/983c42081ad596ee3c62520f27627e1a673222ba/foxy-flex-box.json")
+      axios("https://gist.githubusercontent.com/MaxBSilver/826e01609a4df3ee1a50c9fed01e355b/raw/a9a4bde79c6da065e83e1ab7b925da3286a2dc12/foxy-flex-box.json")
       .then(res => {
           this.setState({
-              justifyData : res.data.justify,
-              alignData : res.data.align,
+              data : res.data,
               isLoading : false
           })
       })
   }
   
   render() {
+    console.log(this.state)
     return (
       <div className="App">
         <React.Fragment>
