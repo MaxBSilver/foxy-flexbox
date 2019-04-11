@@ -33,18 +33,21 @@ class App extends Component {
           })
       })
   }
+
+  updateCurrentRound = (roundNumber) => {
+    this.setState({currentRound : roundNumber})
+  }
   
   render() {
-    console.log(this.state)
     return (
       <div className="App">
         <React.Fragment>
-          <Header {...this.state}/>
+          <Header />
           <Main {...this.state}/>
           <Footer />
         </React.Fragment>
       </div>
-    );
+    )
   }
 }
 
