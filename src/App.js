@@ -14,7 +14,6 @@ class App extends Component {
   
     this.state = {
       data : [],
-      currentRound : 0,
       isLoading : true
     }
   }
@@ -34,19 +33,20 @@ class App extends Component {
       })
   }
 
-  updateCurrentRound = (roundNumber) => {
-    this.setState({currentRound : roundNumber})
-  }
   
   render() {
-    return (
+
+    return !this.state.isLoading ? (
       <div className="App">
         <React.Fragment>
           <Header />
-          <Main {...this.state}/>
+          <Main {...this.state.data}/>
           <Footer />
         </React.Fragment>
       </div>
+    )
+    : (
+      <div></div>
     )
   }
 }
