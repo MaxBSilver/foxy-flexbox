@@ -2,21 +2,24 @@
     display: flex;
     width: 20em;
     height: 20em;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
 }
 .fox--container {
     display: flex;
     position: absolute;
-    width: 20em;
-    height: 20em;
+    width: 18em;
+    height: 18em;
 }
 .box--container {
     display: flex;
-    width: 20em;
-    height: 20em;
+    width: 18em;
+    height: 18em;
 }
 .fox {
-    width: 3em;
-    height: 3em;
+    width: 2.5em;
+    height: 2.5em;
     background-color: orange;
 
     

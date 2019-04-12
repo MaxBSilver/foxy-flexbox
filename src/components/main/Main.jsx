@@ -22,7 +22,7 @@ class Main extends React.Component {
 
     determineQuestion = () => {
         const { roundNumber } = this.state;
-        this.setState({ question : this.props.data[roundNumber], isLoading : false}, () => {
+        this.setState({ question : this.props.data[roundNumber], userGuess : '', isLoading : false}, () => {
             this.incrementRound();
         })
     }
@@ -43,7 +43,7 @@ class Main extends React.Component {
     <main>
         <section className="left--container">
          <Prompt {...question.prompt}/>
-         <Answer {...question}/>
+         <Answer {...question} updateUserAnswer = {this.updateUserAnswer} determineQuestion = {this.determineQuestion}/>
         </section>
         <section className="right--container">
          <Board question = {question.answer} userGuess = {userGuess} />     
