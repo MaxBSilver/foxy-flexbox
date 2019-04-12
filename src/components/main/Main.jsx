@@ -11,7 +11,8 @@ class Main extends React.Component {
       this.state = {
          question : '',
          roundNumber : 0,
-         userGuess : '',
+         jcGuess : '',
+         acGuess : '',
          isLoading : true
       }
     }
@@ -22,7 +23,7 @@ class Main extends React.Component {
 
     determineQuestion = () => {
         const { roundNumber } = this.state;
-        this.setState({ question : this.props.data[roundNumber], userGuess : '', isLoading : false}, () => {
+        this.setState({ question : this.props.data[roundNumber], jcGuess : '', acGuess : '', isLoading : false}, () => {
             this.incrementRound();
         })
     }
@@ -34,11 +35,12 @@ class Main extends React.Component {
     }
 
     updateUserAnswer = (guess) => {
-      this.setState({userGuess : guess})
+      const {acVal, jcVal} = guess;
+      this.setState({jcGuess : jcVal, acGuess : acVal})
     }
 
   render() {
-      const {question, userGuess} = this.state;
+      const {question, jcGuess, acGuess} = this.state;
     return !this.state.isLoading ? (
     <main>
         <section className="left--container">
@@ -46,7 +48,7 @@ class Main extends React.Component {
          <Answer {...question} updateUserAnswer = {this.updateUserAnswer} determineQuestion = {this.determineQuestion}/>
         </section>
         <section className="right--container">
-         <Board question = {question.answer} userGuess = {userGuess} />     
+         <Board jcAnswer = {question.jcAnswer} jcGuess = {jcGuess} acAnswer = {question.acAnswer} acGuess = {acGuess} prompts = {question.prompt}/>     
         </section>
     </main>
     )
