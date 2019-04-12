@@ -5,23 +5,24 @@ export class Answer extends Component {
     super(props)
   
     this.state = {
-      value : ''
+      jcVal : '',
+      acVal : '',
        
     }
   }
   
   handleChange = (e) => {
-    this.setState({value: e.target.value}, () => {
-      
-        this.props.updateUserAnswer(this.state.value)
+    const {value, name} = e.target
+    this.setState({[name] : value}, () => {
+        this.props.updateUserAnswer(this.state)
     })
   }
 
   handleSubmit = (e) => {
     e.preventDefault();
-    if(this.state.value === this.props.answer) {
+    if(this.state.jcVal === this.props.jcAnswer && this.state.acVal === this.props.acAnswer) {
     this.props.determineQuestion()
-    this.setState({value : ''})
+    this.setState({jcVal : '', acVal : ''});
     }
   }
   
@@ -32,9 +33,18 @@ export class Answer extends Component {
         <input
           type='text'
           className="search-input"
-          value={this.state.value}
+          name= 'jcVal'
+          value={this.state.jcVal}
           onChange={this.handleChange}
-          placeholder='Search'
+          placeholder='Justify Content'
+        />
+        <input
+          type='text'
+          className="search-input"
+          name= 'acVal'
+          value={this.state.acVal}
+          onChange={this.handleChange}
+          placeholder='Align Content'
         />
         <input
           type='submit'
