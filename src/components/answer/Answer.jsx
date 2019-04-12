@@ -29,30 +29,42 @@ export class Answer extends Component {
   render() {
     return (
       <section className = "answer--container">
-      <form onSubmit={this.handleSubmit}>
-        <input
-          type='text'
-          className="search-input"
-          name= 'jcVal'
-          value={this.state.jcVal}
-          onChange={this.handleChange}
-          placeholder='Justify Content'
-        />
-        <input
-          type='text'
-          className="search-input"
-          name= 'acVal'
-          value={this.state.acVal}
-          onChange={this.handleChange}
-          placeholder='Align Content'
-        />
-        <input
-          type='submit'
-          className="search-btn"
-          value='Search'
-        />
-      </form>
-
+        <section className = "code-snippet--container">
+        <p> #garden{" {"} </p>
+        <p>display : flex;</p>
+          <form onSubmit={this.handleSubmit} className ="form--container">
+            <div className = "user-form">
+            <div className = "input-one">
+            <p className = "code-prompt"> justify-content : </p>
+            <input
+              type='text'
+              className="search-input"
+              name= 'jcVal'
+              value={this.state.jcVal}
+              onChange={this.handleChange}
+              placeholder=''
+            />
+            </div>
+            <div className = "input-two">
+            <p className = "code-prompt"> align-content : </p>
+            <input
+              type='text'
+              className="search-input"
+              name= 'acVal'
+              value={this.state.acVal}
+              onChange={this.handleChange}
+              placeholder=''
+            />
+            </div>
+            </div>
+            <p>{"}"}</p>
+            <input
+              type='submit'
+              className="search-btn"
+              value='Next'
+            />
+          </form>
+        </section>
       </section>
         
     )

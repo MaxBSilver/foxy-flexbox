@@ -1,3 +1,32 @@
 .answer--container {
+    display: flex;
+    flex-direction: column;
     height: 70%;
+    justify-content : center;
+    align-items: center;
+}
+.code-snippet--container {
+    background-color: lightgrey;
+    width:50%;
+    padding: 1em;
+    border-radius: 2%;
+}
+.user-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-one, .input-two {
+    display:flex;
+    // justify-content: center;
+    align-items: center;
+}
+
+.code-prompt {
+    margin: 0 0.5em;
+}
+.search-input {
+    height: 40%;
+    width: 6em;
 }
