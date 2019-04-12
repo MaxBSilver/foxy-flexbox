@@ -1,0 +1,30 @@
+.board--container {
+    display: flex;
+    width: 20em;
+    height: 20em;
+}
+.fox--container {
+    display: flex;
+    position: absolute;
+    width: 20em;
+    height: 20em;
+}
+.box--container {
+    display: flex;
+    width: 20em;
+    height: 20em;
+}
+.fox {
+    width: 3em;
+    height: 3em;
+    background-color: orange;
+
+    
+}
+
+.box {
+    width: 3em;
+    height: 3em;
+    background-color: brown;
+
+}
