@@ -24,7 +24,7 @@ class App extends Component {
 
   fetch = () => {
       console.log('fetching')
-      axios("https://gist.githubusercontent.com/MaxBSilver/826e01609a4df3ee1a50c9fed01e355b/raw/5bef7dbe8808c7d718a1bc3055944fa28f26178d/foxy-flex-box.json")
+      axios("https://gist.githubusercontent.com/MaxBSilver/826e01609a4df3ee1a50c9fed01e355b/raw/78f841d724c9b0509bd8d4ac3053262605246da1/foxy-flex-box.json")
       .then(res => {
           this.setState({
               data : res.data,

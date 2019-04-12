@@ -40,7 +40,7 @@ class Main extends React.Component {
     }
 
   render() {
-      const {question, jcGuess, acGuess} = this.state;
+      const {question, jcGuess, acGuess, roundNumber} = this.state;
     return !this.state.isLoading ? (
     <main>
         <section className="left--container">
@@ -48,7 +48,7 @@ class Main extends React.Component {
          <Answer {...question} updateUserAnswer = {this.updateUserAnswer} determineQuestion = {this.determineQuestion}/>
         </section>
         <section className="right--container">
-         <Board jcAnswer = {question.jcAnswer} jcGuess = {jcGuess} acAnswer = {question.acAnswer} acGuess = {acGuess} prompts = {question.prompt}/>     
+         <Board jcAnswer = {question.jcAnswer} jcGuess = {jcGuess} acAnswer = {question.acAnswer} acGuess = {acGuess} prompts = {question.prompt} roundNumber = {roundNumber}/>     
         </section>
     </main>
     )
