@@ -20,7 +20,7 @@ export class Answer extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    if(this.state.jcVal === this.props.jcAnswer && this.state.acVal === this.props.acAnswer) {
+    if(this.state.jcVal === this.props.justifyContent && this.state.acVal === this.props.alignContent) {
     this.props.determineQuestion()
     this.setState({jcVal : '', acVal : ''});
     }
