@@ -7,12 +7,14 @@ import Prompt from '../prompt/Prompt';
 class Main extends React.Component {
     constructor(props) {
       super(props)
-    
       this.state = {
          question : '',
          roundNumber : 0,
-         jcGuess : '',
-         acGuess : '',
+         userGuessOne : '',
+         userGuessTwo : '',
+         difficulty: '',
+         display: '',
+         flexDirection: '',
          isLoading : true
       }
     }
@@ -23,7 +25,13 @@ class Main extends React.Component {
 
     determineQuestion = () => {
         const { roundNumber } = this.state;
-        this.setState({ question : this.props.data[roundNumber], jcGuess : '', acGuess : '', isLoading : false}, () => {
+        this.setState({ 
+          question : this.props.data[roundNumber],
+
+          userGuessOne : '', 
+          userGuessTwo : '', 
+
+          isLoading : false}, () => {
             this.incrementRound();
         })
     }
@@ -36,19 +44,33 @@ class Main extends React.Component {
 
     updateUserAnswer = (guess) => {
       const {acVal, jcVal} = guess;
-      this.setState({jcGuess : jcVal, acGuess : acVal})
+      this.setState({userGuessOne : jcVal, userGuessTwo : acVal})
     }
 
   render() {
-      const {question, jcGuess, acGuess, roundNumber} = this.state;
+      const {question, userGuessOne, userGuessTwo, roundNumber} = this.state;
     return !this.state.isLoading ? (
     <main>
         <section className="left--container">
-         <Prompt {...question.prompt}/>
-         <Answer {...question} updateUserAnswer = {this.updateUserAnswer} determineQuestion = {this.determineQuestion}/>
+         <Prompt {...question}/>
+         <Answer 
+            {...question} 
+            updateUserAnswer = {this.updateUserAnswer} 
+            determineQuestion = {this.determineQuestion}
+          />
         </section>
         <section className="right--container">
-         <Board jcAnswer = {question.jcAnswer} jcGuess = {jcGuess} acAnswer = {question.acAnswer} acGuess = {acGuess} prompts = {question.prompt} roundNumber = {roundNumber}/>     
+         <Board 
+            justifyContent = {question.justifyContent} 
+            userGuessOne = {userGuessOne} 
+            alignContent = {question.alignContent} 
+            userGuessTwo = {userGuessTwo} 
+            prompts = {question.prompt} 
+            roundNumber = {roundNumber} 
+            difficulty = {question.difficulty} 
+            display = {question.display} 
+            flexDirection = {question.flexDirection}
+          />     
         </section>
     </main>
     )

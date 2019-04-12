@@ -24,7 +24,7 @@ class App extends Component {
 
   fetch = () => {
       console.log('fetching')
-      axios("https://gist.githubusercontent.com/MaxBSilver/826e01609a4df3ee1a50c9fed01e355b/raw/78f841d724c9b0509bd8d4ac3053262605246da1/foxy-flex-box.json")
+      axios("https://gist.githubusercontent.com/MaxBSilver/72738c4b15db04fb0748f5a07ffea45f/raw/ecff2ec42dcbf8a1914cbaff2f1fb72bf430dc2a/foxy-flexbox.json")
       .then(res => {
           this.setState({
               data : res.data,
@@ -33,7 +33,6 @@ class App extends Component {
       })
   }
 
-  
   render() {
 
     return !this.state.isLoading ? (
