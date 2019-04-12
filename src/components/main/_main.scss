@@ -1,5 +1,11 @@
 main {
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 100vh;
+}
+
+.right--container, .left--container {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }

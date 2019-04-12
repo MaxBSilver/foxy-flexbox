@@ -1,6 +1,14 @@
+@import './normalize';
 @import './components/answer/answer';
 @import './components/board/board';
 @import './components/footer/footer';
 @import './components/header/header';
 @import './components/main/main';
 @import './components/prompt/prompt';
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro|Raleway');
+
+html, body, main, .App {
+    min-height: 100%;
+    background-color: grey;
+    font-family: 'Raleway', sans-serif;
+}    
