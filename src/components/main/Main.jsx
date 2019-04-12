@@ -10,7 +10,9 @@ class Main extends React.Component {
     
       this.state = {
          question : '',
-         roundNumber : 0
+         roundNumber : 0,
+         userGuess : '',
+         isLoading : true
       }
     }
 
@@ -20,7 +22,7 @@ class Main extends React.Component {
 
     determineQuestion = () => {
         const { roundNumber } = this.state;
-        this.setState({ question : this.props.data[roundNumber]}, () => {
+        this.setState({ question : this.props.data[roundNumber], isLoading : false}, () => {
             this.incrementRound();
         })
     }
@@ -31,16 +33,24 @@ class Main extends React.Component {
         this.setState({roundNumber : incrementedRound})
     }
 
+    updateUserAnswer = (guess) => {
+      this.setState({userGuess : guess})
+    }
+
   render() {
-      const {question} = this.state;
-      console.log(question)
-    return (
+      const {question, userGuess} = this.state;
+    return !this.state.isLoading ? (
     <main>
-        <Prompt {...question}/>
-        <Answer {...question}/>
-        <Board {...question}/>     
+        <section className="left--container">
+         <Prompt {...question.prompt}/>
+         <Answer {...question}/>
+        </section>
+        <section className="right--container">
+         <Board question = {question.answer} userGuess = {userGuess} />     
+        </section>
     </main>
     )
+    : <div></div>
   }
 }
 

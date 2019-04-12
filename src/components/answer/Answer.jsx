@@ -3,9 +3,10 @@ import React, { Component } from 'react'
 export class Answer extends Component {
   render() {
     return (
-      <div>
+      <section className = "answer--container">
+
+      </section>
         
-      </div>
     )
   }
 }
