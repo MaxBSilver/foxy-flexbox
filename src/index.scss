@@ -1,4 +1,6 @@
 @import './normalize';
+@import './variables';
+@import "./fontAwesome/scss/fontawesome.scss";
 @import './components/answer/answer';
 @import './components/board/board';
 @import './components/footer/footer';
@@ -9,6 +11,7 @@
 
 html, body, main, .App {
     min-height: 100%;
-    background-color: grey;
+    background-color: #C5DECD;
     font-family: 'Raleway', sans-serif;
+    color: #C5DECD;
 }    

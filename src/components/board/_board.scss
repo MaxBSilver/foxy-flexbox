@@ -11,6 +11,7 @@
     background-color: #65a565;
     border-radius: 2%;
     position: relative;
+    border: 0.5em #495159 solid;
     
 }
 .fox--container {
@@ -35,10 +36,13 @@
     height: 7em;
     width: 7em;
 }
+.box-img {
+    height: 7em;
+    width: 7em;
+}
 .box {
-    width: 6em;
-    height: 6em;
-    border: 0.7em solid tan;
-    background-color: #A1884B;
+    width: 7em;
+    height: 7em;
+
 
 }

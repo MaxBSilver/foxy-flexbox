@@ -24,20 +24,22 @@ export class Answer extends Component {
       this.state.acVal === this.props.alignContent
     ) {
       this.props.determineQuestion();
+      this.props.incrementRound();
       this.setState({ jcVal: "", acVal: "" });
     }
   };
 
   render() {
-    console.log(this.props)
     return (
       <section className="answer--container">
         <section className="code-snippet--container">
-          <p> #garden{" {"} </p>
           <form onSubmit={this.handleSubmit} className="form--container">
+            <p> #garden{" {"} </p>
             <div className="user-form">
-              <p className='code-snippet--title'>display : flex;</p>
-              <p className='code-snippet--title'>flex-direction: {this.props.flexDirection};</p>
+              <p className="code-snippet--title">display : flex;</p>
+              <p className="code-snippet--title">
+                flex-direction: {this.props.flexDirection};
+              </p>
               <div className="input-one">
                 <p className="code-prompt"> justify-content : </p>
                 <input
