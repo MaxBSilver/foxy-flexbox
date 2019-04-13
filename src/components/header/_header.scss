@@ -1,12 +1,26 @@
 header {
     height: 7em;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: #495159;
 }
 
 h1.header-title {
     font-size: 5em;
-    color: #C5DECD;
+    display: flex;
+    align-items: center;
+    color: whitesmoke
+
+    
 }
+
+h1 img {
+    width: 1.2em;
+}
+
+.header-colored-letters {
+    background: -webkit-linear-gradient(rgb(228, 107, 26), rgb(247, 109, 251));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}   
