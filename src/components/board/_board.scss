@@ -26,23 +26,20 @@
     height: 35em;
 }
 .fox {
-    width: 7em;
-    height: 7em;
+    width: 5.5em;
+    height: 5.5em;
     display: flex;
     justify-content: center;
     align-content: center;
 }
 .fox-img {
-    height: 7em;
-    width: 7em;
-}
-.box-img {
-    height: 7em;
-    width: 7em;
+    height: 5em;
+    width: 5em;
 }
 .box {
-    width: 7em;
-    height: 7em;
-
+    width: 5em;
+    height: 5em;
+    border: 0.3em solid tan;
+    background-color: #A1884B;
 
 }

@@ -21,14 +21,44 @@
     color: #495159
 }
 .prompt-next-button,
-.prompt-previous-button,
-.prompt-next-button:focus,
-.prompt-previous-button:focus {
+.prompt-previous-button {
     width: 2em;
     background-color: transparent;
     border: none;
     outline: 0;
     color: #495159;
+}
+
+.prompt-next-button {
+    border-left: 3px solid #495159;
+}
+.prompt-previous-button {
+    border-right: 3px solid #495159;
+}
+.prompt-next-button:hover {
+    background-color: #FAC9B8;
+    border-radius: 0em 2em 2em 0em;
+    border-left: 3px solid #495159;
+
+
+}
+.prompt-previous-button:hover {
+    background-color: #FAC9B8;
+    border-radius: 2em 0em 0em 2em;
+    border-right: 3px solid #495159;
+
+}
+.prompt-previous-button:focus {
+    border-radius: 2em 0em 0em 2em;
+    border-right: 3px solid #495159;
+}
+.prompt-next-button:focus {
+    border-left: 3px solid #495159;
+
+}
+
+.prompt-button--container h3 {
+    margin: 0 0.5em;
 }
 
 .prompt-property--container {
