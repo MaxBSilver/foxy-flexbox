@@ -34,10 +34,10 @@ export class Answer extends Component {
       <section className="answer--container">
         <section className="code-snippet--container">
           <form onSubmit={this.handleSubmit} className="form--container">
-            <p> #garden{" {"} </p>
+            <p className="code-snippet--title"> #garden{" {"} </p>
             <div className="user-form">
-              <p className="code-snippet--title">display : flex;</p>
-              <p className="code-snippet--title">
+              <p className="code-snippet--body">display : flex;</p>
+              <p className="code-snippet--body">
                 flex-direction: {this.props.flexDirection};
               </p>
               <div className="input-one">
@@ -63,7 +63,7 @@ export class Answer extends Component {
                 />
               </div>
             </div>
-            <p>{"}"}</p>
+            <p className="code-snippet--title">{"}"}</p>
             <input type="submit" className="search-btn" value="Next" />
           </form>
         </section>
