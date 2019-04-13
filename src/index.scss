@@ -7,11 +7,11 @@
 @import './components/header/header';
 @import './components/main/main';
 @import './components/prompt/prompt';
-@import url('https://fonts.googleapis.com/css?family=Maven+Pro|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro|Raleway|Source+Code+Pro');
 
 html, body, main, .App {
     min-height: 100%;
-    background-color: #C5DECD;
+    background-color: #404b69;
     font-family: 'Raleway', sans-serif;
-    color: #C5DECD;
+    color: #404b69;
 }    

@@ -26,19 +26,9 @@ export default function Prompt(props) {
       </div>
       <div className="prompt-body-container">
         <p className="prompt-body-title">
-          Help the fox get into the box by using the following CSS properties:{" "}
+          Help the fox get into the box by using the following <span>CSS properties : </span>
         </p>
         <div className="prompt-property--container">
-           <h4>justify-content : </h4>
-          <ul>
-            <li> center</li>
-            <li> flex-start</li>
-            <li> flex-end</li>
-            <li> space-around</li>
-            <li> space-between</li>
-            <li> space-evenly</li>
-          </ul>
-           <h4>align-content : </h4>
           <ul>
             <li> center</li>
             <li> flex-start</li>

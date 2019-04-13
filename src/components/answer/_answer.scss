@@ -4,15 +4,15 @@
     height: 70%;
     justify-content : center;
     align-items: center;
-    font-size: 1.4em;
+    font-size: 1em;
 
 }
 .code-snippet--container {
-    background-color: #25A18E;
+    background-color: #dbedf3;
     width: 70%;
     height: 70%;
     padding: 1em;
-    border: 0.5em #495159 solid;
+    border: 0.5em #283149 solid;
     border-radius: 1em;
 }
 .user-form {
@@ -21,6 +21,7 @@
     align-items: space-between;
     justify-content: space-between;
     margin-left: 1em;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .form--container {
@@ -36,8 +37,12 @@
     align-items: center;
 }
 
-.code-prompt,
 .code-snippet--title {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.code-prompt,
+.code-snippet--body {
     margin: 0.2em 0.5em;
     min-width: 8em;
 }
@@ -45,16 +50,16 @@
 .search-btn:focus {
     width: 4em;
     border-radius: 2em;
-    background-color: #C5DECD;
-    border: 3px solid #495159;
-    color: #495159;
+    background-color: #404b69;
+    border: 3px solid #283149;
+    color: #dbedf3;
     outline: none;
 
 }
 .search-input {
-    border: 0.2em solid #495159;
-    background-color: #C5DECD;
-    color: #495159;
+    border: 0.1em solid #283149;
+    background-color: #404b69;
+    color: #dbedf3;
     width: 8em;
 }
 .search-input:focus {
