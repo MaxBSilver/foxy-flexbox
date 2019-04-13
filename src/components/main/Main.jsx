@@ -23,6 +23,10 @@ class Main extends React.Component {
   };
 
   determineQuestion = () => {
+   this.selectQuestion();
+  };
+
+  selectQuestion = () => {
     const { roundNumber } = this.state;
     this.setState(
       {
@@ -31,39 +35,46 @@ class Main extends React.Component {
         userGuessTwo: "",
         userGuessThree: "",
         isLoading: false
-      },
-      () => {
-        this.incrementRound();
-      }
-    );
-  };
+      })
+  }
+
 
   incrementRound = () => {
     let incrementedRound = this.state.roundNumber;
     incrementedRound = incrementedRound += 1;
-    this.setState({ roundNumber: incrementedRound });
+    this.setState({ roundNumber: incrementedRound }, () => {
+      this.determineQuestion();
+    });
+  };
+
+  decrementRound = () => {
+    let decrementedRound = this.state.roundNumber;
+    decrementedRound = decrementedRound -= 1;
+    this.setState({ roundNumber: decrementedRound }, () => {
+      this.determineQuestion();
+    });
   };
 
   updateUserAnswer = guess => {
-    const { acVal, jcVal, flexDirVal } = guess;
-    console.log(flexDirVal);
+    const { acVal, jcVal} = guess;
     this.setState({
       userGuessOne: jcVal,
       userGuessTwo: acVal,
-      userGuessThree: flexDirVal
     });
   };
 
   render() {
+    console.log(this.state.roundNumber)
     const { question, userGuessOne, userGuessTwo, roundNumber } = this.state;
     return !this.state.isLoading ? (
       <main>
         <section className="left--container">
-          <Prompt {...question} incrementRound={this.incrementRound} />
+          <Prompt {...question} determineQuestion={this.determineQuestion} incrementRound={this.incrementRound} decrementRound ={this.decrementRound} />
           <Answer
             {...question}
             updateUserAnswer={this.updateUserAnswer}
             determineQuestion={this.determineQuestion}
+            incrementRound={this.incrementRound}
           />
         </section>
         <section className="right--container">

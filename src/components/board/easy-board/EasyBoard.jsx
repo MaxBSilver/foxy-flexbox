@@ -25,7 +25,13 @@ export default function EasyBoard(props) {
         className="box--container"
         style={{ justifyContent: boxJustify, alignItems: boxAlign }}
       >
-        <article className="box" />
+        <article className="box" >
+        <img
+      className="box-img"
+      alt="box"
+      src="https://cdn.pixabay.com/photo/2016/09/16/09/20/box-1673579_1280.png"
+      />
+        </article>
       </section>
     </section>
   );
