@@ -3,19 +3,20 @@
 
 .board--container {
     display: flex;
-    width: 85%;
+    width: 35em;
     height: 40em;
     align-items: center;
     justify-content: center;
     background-position-y: -10.7em;
     background-color: #65a565;
     border-radius: 2%;
+    position: relative;
     
 }
 .fox--container {
     display: flex;
     position: absolute;
-    width: 35em;
+    width: 100%;
     height: 35em;
 }
 .box--container {

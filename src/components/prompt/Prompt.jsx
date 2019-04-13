@@ -1,9 +1,6 @@
-import React from 'react'
+import React from "react";
 
-export default function Prompt() {
-  return (
-    <section className = "prompt--container">
-      
-    </section>
-  )
+export default function Prompt(props) {
+  console.log(props);
+  return <section className="prompt--container" />;
 }
