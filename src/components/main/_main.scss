@@ -13,3 +13,23 @@ main {
 .right--container {
      align-items: center;
 }
+
+
+@media only screen and (max-width: 1080px) {
+    main {
+        grid-template-columns: 100%;
+    }
+    .prompt--container,
+    .answer--container {
+    }
+    .left--container {
+        align-items: center;
+        flex-direction: inline;
+    }
+    .answer--container {
+        width: 70%;
+    }
+  }
+
+
+

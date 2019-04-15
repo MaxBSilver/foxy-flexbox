@@ -2,18 +2,24 @@
     display: flex;
     flex-direction: column;
     height: 70%;
+    width: 100%;
     justify-content : center;
     align-items: center;
     font-size: 1em;
+
 
 }
 .code-snippet--container {
     background-color: #dbedf3;
     width: 70%;
-    height: 70%;
+    height: 100%;
     padding: 1em;
     border: 0.5em #283149 solid;
     border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .user-form {
     display: flex;
@@ -23,13 +29,23 @@
     margin-left: 1em;
     font-family: 'Source Code Pro', monospace;
 }
+form {
+    width: 80%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
+}
 .form--container {
     display: flex;
     flex-direction: column;
     height:100%;
     align-items: space-between;
     justify-content: space-between;
+    background-color: lightgrey;
+    border-radius: 0.2em;
+    padding: 0.5em;
 }
 
 .input-one, .input-two {
@@ -46,6 +62,7 @@
     margin: 0.2em 0.5em;
     min-width: 8em;
 }
+
 .search-btn,
 .search-btn:focus {
     width: 4em;
@@ -54,14 +71,24 @@
     border: 3px solid #283149;
     color: #dbedf3;
     outline: none;
-
 }
+
 .search-input {
     border: 0.1em solid #283149;
     background-color: #404b69;
     color: #dbedf3;
     width: 8em;
 }
+.search-btn {
+    background-color:red;
+}
+
 .search-input:focus {
     outline: none;
+}
+
+.submit--container {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0.5em;
 }

@@ -31,6 +31,8 @@
     display: flex;
     justify-content: center;
     align-content: center;
+    animation: shake 2s infinite linear;
+
 }
 .fox-img {
     height: 5em;
@@ -41,5 +43,12 @@
     height: 5em;
     border: 0.3em solid tan;
     background-color: #A1884B;
+
+}
+
+@keyframes shake {
+    0%{transform: translateY(0em)}
+    50%{transform: translateY(0.3em)}
+    100%{transform: translateY(0em)}
 
 }
