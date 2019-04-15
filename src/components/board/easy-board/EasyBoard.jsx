@@ -1,12 +1,13 @@
 import React from "react";
 
+
 export default function EasyBoard(props) {
   const direction = props.flexDirection;
-  console.log(props.flexDirection);
   const foxAlign = props.userGuessTwo;
   const boxAlign = props.alignContent;
   const foxJustify = props.userGuessOne;
   const boxJustify = props.justifyContent;
+
   return (
     <section className="board--container" style={{ flexDirection: direction }}>
       <section
