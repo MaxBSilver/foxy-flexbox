@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { Spring } from "react-spring/renderprops";
 
-export class Answer extends Component {
+
+export default class Answer extends Component {
   constructor(props) {
     super(props);
 
@@ -42,9 +42,7 @@ export class Answer extends Component {
   render() {
     const btnColor = this.state.btnColor;
     return (
-      <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
-        {props => (
-          <section className="answer--container" style={props}>
+          <section className="answer--container">
             <section className="code-snippet--container">
               <form onSubmit={this.handleSubmit}>
                 <div className="form--container">
@@ -85,10 +83,7 @@ export class Answer extends Component {
               </form>
             </section>
           </section>
-        )}
-      </Spring>
     );
   }
 }
 
-export default Answer;

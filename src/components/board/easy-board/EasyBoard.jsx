@@ -24,7 +24,7 @@ export default function EasyBoard(props) {
       </section>
       <section
         className="box--container"
-        style={{ justifyContent: boxJustify, alignItems: boxAlign }}
+        style={{ justifyContent: boxJustify, alignItems : boxAlign }}
       >
         <article className="box">
         </article>

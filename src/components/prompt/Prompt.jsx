@@ -1,7 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
-import { useSpring, animated } from "react-spring";
 
 export default function Prompt(props) {
   const nextRound = () => {
@@ -12,9 +11,7 @@ export default function Prompt(props) {
     props.decrementRound();
   };
   const { difficulty, id } = props;
-  const springProps = useSpring({ opacity: 1, from: { opacity: 0 } });
   return (
-    <animated.div style={springProps}>
       <section className="prompt--container">
         <div className="prompt-head--container">
           <h3 className="prompt-difficulty">Difficulty : {difficulty}</h3>
@@ -45,6 +42,5 @@ export default function Prompt(props) {
           </div>
         </div>
       </section>
-    </animated.div>
   );
 }
