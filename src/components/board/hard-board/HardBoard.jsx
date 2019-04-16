@@ -1,11 +1,15 @@
 import React from "react";
 
-export default function ModerateBoard(props) {
+export default function HardBoard(props) {
   const direction = props.flexDirection;
   const foxAlign = props.userGuessTwo;
   const boxAlign = props.alignContent;
   const foxJustify = props.userGuessOne;
   const boxJustify = props.justifyContent;
+  const boxWrap = props.flexWrap;
+  const foxWrap = props.userGuessThree;
+  console.log(boxWrap)
+ 
   return (
     <section className="board--container">
       <section
@@ -13,21 +17,50 @@ export default function ModerateBoard(props) {
         style={{
           justifyContent: foxJustify,
           alignItems: foxAlign,
-          flexDirection: direction
+          flexDirection: direction,
+          flexWrap: foxWrap
         }}
       >
         <article className="fox">
           <img
             className="fox-img"
             alt="fox"
-            src="http://clipart-library.com/img/749202.png"
+            src="https://i.imgur.com/XnHxBnB.png"
           />
         </article>
         <article className="fox">
           <img
             className="fox-img"
             alt="fox"
-            src="http://clipart-library.com/img/749202.png"
+            src="https://i.imgur.com/XnHxBnB.png"
+          />
+        </article>
+        <article className="fox">
+          <img
+            className="fox-img"
+            alt="fox"
+            src="https://i.imgur.com/XnHxBnB.png"
+          />
+        </article>
+        <article className="fox">
+          <img
+            className="fox-img"
+            alt="fox"
+            src="https://i.imgur.com/FmUqM1R.png"
+          />
+        </article>
+        <article className="fox">
+          <img
+            className="fox-img"
+            alt="fox"
+            src="https://i.imgur.com/FmUqM1R.png"
+          />
+        </article>
+        <article className="fox">
+          <img
+            className="fox-img"
+            alt="fox"
+            src="https://i.imgur.com/FmUqM1R.png"
           />
         </article>
         <article className="fox">
@@ -50,9 +83,14 @@ export default function ModerateBoard(props) {
         style={{
           justifyContent: boxJustify,
           alignItems: boxAlign,
-          flexDirection: direction
+          flexDirection: direction,
+          flexWrap: boxWrap
         }}
       >
+        <article className="box" />
+        <article className="box" />
+        <article className="box" />
+        <article className="box" />
         <article className="box" />
         <article className="box" />
         <article className="box" />

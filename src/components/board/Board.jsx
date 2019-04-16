@@ -1,7 +1,7 @@
 import React from "react";
 import EasyBoard from "./easy-board/EasyBoard";
 import ModerateBoard from "./moderate-board/ModerateBoard";
-import HardBoard from './hard-board/HardBoard';
+import HardBoard from "./hard-board/HardBoard";
 import { useSpring, animated } from "react-spring";
 
 export default function Board(props) {
@@ -12,13 +12,13 @@ export default function Board(props) {
         <EasyBoard {...props} />
       </animated.div>
     );
-  } else if (props.roundNumber <= 20) {
+  } else if (props.roundNumber < 20) {
     return (
       <animated.div style={springProps}>
         <ModerateBoard {...props} />
       </animated.div>
     );
-  } else if (props.roundNumber > 20) {
+  } else if (props.roundNumber >= 20) {
     return (
       <animated.div style={springProps}>
         <HardBoard {...props} />

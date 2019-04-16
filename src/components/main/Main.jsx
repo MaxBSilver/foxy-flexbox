@@ -2,6 +2,7 @@ import React from "react";
 import Answer from "../answer/Answer";
 import Board from "../board/Board";
 import Prompt from "../prompt/Prompt";
+import { faMoneyBillWaveAlt } from "@fortawesome/free-solid-svg-icons";
 
 
 class Main extends React.Component {
@@ -9,7 +10,7 @@ class Main extends React.Component {
     super(props);
     this.state = {
       question: "",
-      roundNumber: 0,
+      roundNumber: JSON.parse(localStorage.getItem('round')) || 0,
       userGuessOne: "",
       userGuessTwo: "",
       difficulty: "",
@@ -25,6 +26,7 @@ class Main extends React.Component {
 
   determineQuestion = () => {
     this.selectQuestion();
+    this.saveToLocalStorage();
   };
 
   selectQuestion = () => {
@@ -41,7 +43,7 @@ class Main extends React.Component {
   incrementRound = () => {
     let incrementedRound = this.state.roundNumber;
     incrementedRound = incrementedRound += 1;
-    if (incrementedRound < 20) {
+    if (incrementedRound < this.props.data.length) {
       this.setState({ roundNumber: incrementedRound }, () => {
         this.determineQuestion();
       });
@@ -58,16 +60,22 @@ class Main extends React.Component {
     }
   };
 
+  saveToLocalStorage = () => {
+    localStorage.setItem('round', JSON.stringify(this.state.roundNumber))
+
+  }
+
   updateUserAnswer = guess => {
-    const { acVal, jcVal } = guess;
+    const { acVal, jcVal, fwVal } = guess;
     this.setState({
       userGuessOne: jcVal,
-      userGuessTwo: acVal
+      userGuessTwo: acVal,
+      userGuessThree: fwVal,
     });
   };
 
   render() {
-    const { question, userGuessOne, userGuessTwo, roundNumber } = this.state;
+    const { question, userGuessOne, userGuessTwo, userGuessThree, roundNumber } = this.state;
     return !this.state.isLoading ? (
       <main>
         <section className="left--container">
@@ -86,6 +94,7 @@ class Main extends React.Component {
         </section>
         <section className="right--container">
           <Board
+            flexWrap = {question.flexWrap}
             justifyContent={question.justifyContent}
             userGuessOne={userGuessOne}
             alignContent={question.alignContent}
@@ -95,6 +104,7 @@ class Main extends React.Component {
             difficulty={question.difficulty}
             display={question.display}
             flexDirection={question.flexDirection}
+            userGuessThree={userGuessThree}
           />
         </section>
       </main>

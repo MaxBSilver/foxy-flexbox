@@ -20,7 +20,14 @@ export default function ModerateBoard(props) {
           <img
             className="fox-img"
             alt="fox"
-            src="http://clipart-library.com/img/749202.png"
+            src="https://i.imgur.com/XnHxBnB.png"
+          />
+        </article>
+        <article className="fox">
+          <img
+            className="fox-img"
+            alt="fox"
+            src="https://i.imgur.com/FmUqM1R.png"
           />
         </article>
         <article className="fox">
@@ -40,6 +47,8 @@ export default function ModerateBoard(props) {
         }}
       >
         <article className="box" />
+        <article className="box" />
+
         <article className="box" />
       </section>
     </section>
