@@ -21,7 +21,6 @@ class App extends Component {
   }
 
   fetch = () => {
-    console.log("fetching");
     axios(
       "https://gist.githubusercontent.com/MaxBSilver/72738c4b15db04fb0748f5a07ffea45f/raw/6e7f5bb2b0acdb82af04c1591094a075d59fef14/foxy-flexbox.json"
     ).then(res => {

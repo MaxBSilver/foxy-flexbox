@@ -1,7 +1,7 @@
 .prompt--container,
 .prompt-head--container,
 .prompt-button--container {
-  display: $displayFlex;;
+  display: $displayFlex;
 }
 
 .prompt--container {
@@ -67,7 +67,7 @@ input:focus {
 }
 
 .prompt-property--container {
-  display: $displayFlex;;
+  display: $displayFlex;
   align-items: flex-start;
   justify-content: $justifyContentSpaceAround;
 }

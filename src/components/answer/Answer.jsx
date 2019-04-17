@@ -10,7 +10,7 @@ export default class Answer extends Component {
       jcVal: "",
       acVal: "",
       fwVal: "",
-      btnColor: "$darkBlueBackground"
+      btnColor: "#404b69"
     };
   }
 
@@ -35,7 +35,6 @@ export default class Answer extends Component {
   };
 
   handleSubmit = e => {
-    //todo deconstruct
     e.preventDefault();
     if (
       this.props.id < 21 &&
@@ -44,7 +43,12 @@ export default class Answer extends Component {
     ) {
       this.props.determineQuestion();
       this.props.incrementRound();
-      this.setState({ jcVal: "", acVal: "", btnColor: "$darkBlueBackground", fwVal: "" });
+      this.setState({
+        jcVal: "",
+        acVal: "",
+        btnColor: "#65a565",
+        fwVal: ""
+      });
     } else if (
       this.state.jcVal === this.props.justifyContent &&
       this.state.acVal === this.props.alignContent &&
@@ -52,12 +56,16 @@ export default class Answer extends Component {
     ) {
       this.props.determineQuestion();
       this.props.incrementRound();
-      this.setState({ jcVal: "", acVal: "", btnColor: "$darkBlueBackground", fwVal: "" });
+      this.setState({
+        jcVal: "",
+        acVal: "",
+        btnColor: "#404b69",
+        fwVal: ""
+      });
     }
   };
 
   render() {
-    console.log(this.state.fwVal);
     const btnColor = this.state.btnColor;
     let hardSnippet;
     if (this.props.id > 20) {
