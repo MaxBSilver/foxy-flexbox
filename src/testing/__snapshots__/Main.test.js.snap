@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main should match the snapshot with all data passed in 1`] = `
+<main>
+  <section
+    className="left--container"
+  >
+    <Prompt
+      alignContent="flex-end"
+      decrementRound={[Function]}
+      determineQuestion={[Function]}
+      difficulty="easy"
+      display="flex"
+      flexDirection="row"
+      id={1}
+      incrementRound={[Function]}
+      justifyContent="center"
+      prompt="justify-content"
+    />
+    <Answer
+      alignContent="flex-end"
+      determineQuestion={[Function]}
+      difficulty="easy"
+      display="flex"
+      flexDirection="row"
+      id={1}
+      incrementRound={[Function]}
+      justifyContent="center"
+      prompt="justify-content"
+      updateUserAnswer={[Function]}
+    />
+  </section>
+  <section
+    className="right--container"
+  >
+    <Board
+      alignContent="flex-end"
+      difficulty="easy"
+      display="flex"
+      flexDirection="row"
+      justifyContent="center"
+      prompts="justify-content"
+      roundNumber={0}
+      userGuessOne=""
+      userGuessThree=""
+      userGuessTwo=""
+    />
+  </section>
+</main>
+`;

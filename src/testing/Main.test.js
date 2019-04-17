@@ -2,6 +2,7 @@ import React from 'react';
 import Main from '../components/main/Main';
 import { shallow } from 'enzyme';
 describe("Main", () => {
+  let mockDetermineQuestion = jest.fn();
   let mockData = {
     data: [
       {
@@ -44,8 +45,13 @@ describe("Main", () => {
   };
   let wrapper;
   beforeEach(() => {
+    wrapper = shallow(<Main {...mockData} determineQuestion={mockDetermineQuestion} />);
+  });
+
+  afterEach(() => {
     wrapper = shallow(<Main {...mockData} />);
   });
+  
   it("should match the snapshot with all data passed in", () => {
     expect(wrapper).toMatchSnapshot();
   });
@@ -55,6 +61,9 @@ describe("Main", () => {
     expect(wrapper.state("roundNumber")).toEqual(1);
     wrapper.instance().incrementRound();
     expect(wrapper.state("roundNumber")).toEqual(2);
+    wrapper.instance().decrementRound();
+    wrapper.instance().decrementRound();
+
   });
   it("should decrement round", () => {
     expect(wrapper.state("roundNumber")).toEqual(0);
@@ -108,5 +117,18 @@ describe("Main", () => {
   })
   it("should update question on load", () => {
     expect(wrapper.state("question")).toEqual({"alignContent": "flex-end", "difficulty": "easy", "display": "flex", "flexDirection": "row", "id": 1, "justifyContent": "center", "prompt": "justify-content"});
+  })
+  it("should increment round if the current round is less than the dataLength", () => {
+    expect(wrapper.state("roundNumber")).toEqual(0);
+    wrapper.instance().incrementRound();
+    wrapper.instance().incrementRound();
+    wrapper.instance().incrementRound();
+    wrapper.instance().incrementRound();
+    expect(wrapper.state("roundNumber")).toEqual(3);
+    wrapper.instance().incrementRound();
+    wrapper.instance().incrementRound();
+    wrapper.instance().incrementRound();
+    expect(wrapper.state("roundNumber")).toEqual(3);
+    
   })
 });

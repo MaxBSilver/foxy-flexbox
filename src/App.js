@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import "./App.css";
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCaretRight, faCaretLeft } from '@fortawesome/free-solid-svg-icons'
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faCaretRight, faCaretLeft } from "@fortawesome/free-solid-svg-icons";
 
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
-import Footer from "./components/footer/Footer";
 
 import axios from "axios";
-library.add(faCaretRight, faCaretLeft)
+library.add(faCaretRight, faCaretLeft);
 class App extends Component {
   constructor(props) {
     super(props);
@@ -25,7 +24,7 @@ class App extends Component {
   fetch = () => {
     console.log("fetching");
     axios(
-      "https://gist.githubusercontent.com/MaxBSilver/72738c4b15db04fb0748f5a07ffea45f/raw/f6c9d685b9ac7ea0508bd0cf5e5e661423e42645/foxy-flexbox.json"
+      "https://gist.githubusercontent.com/MaxBSilver/72738c4b15db04fb0748f5a07ffea45f/raw/6e7f5bb2b0acdb82af04c1591094a075d59fef14/foxy-flexbox.json"
     ).then(res => {
       this.setState({
         data: res.data,
@@ -40,7 +39,6 @@ class App extends Component {
         <React.Fragment>
           <Header />
           <Main {...this.state.data} />
-          <Footer />
         </React.Fragment>
       </div>
     ) : (

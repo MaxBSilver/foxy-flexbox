@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Prompt should match the snapshot with all data passed in 1`] = `
+<section
+  className="prompt--container"
+>
+  <div
+    className="prompt-head--container"
+  >
+    <h3
+      className="prompt-difficulty"
+    >
+      Difficulty : 
+      easy
+    </h3>
+    <div
+      className="prompt-button--container"
+    >
+      <button
+        className="prompt-previous-button"
+        onClick={[Function]}
+      >
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Object {
+              "icon": Array [
+                192,
+                512,
+                Array [],
+                "f0d9",
+                "M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z",
+              ],
+              "iconName": "caret-left",
+              "prefix": "fas",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      </button>
+      <h3>
+         Level : 
+        1
+         of 25
+      </h3>
+      <button
+        className="prompt-next-button"
+        onClick={[Function]}
+      >
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Object {
+              "icon": Array [
+                192,
+                512,
+                Array [],
+                "f0da",
+                "M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z",
+              ],
+              "iconName": "caret-right",
+              "prefix": "fas",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      </button>
+    </div>
+  </div>
+  <div
+    className="prompt-body-container"
+  >
+    <p
+      className="prompt-body-title"
+    >
+      Help the fox get into the box by using the following
+       
+      <span>
+        CSS properties : 
+      </span>
+    </p>
+    <div
+      className="prompt-property--container"
+    >
+      <ul>
+         justify-content
+        <li>
+           center
+        </li>
+        <li>
+           flex-start
+        </li>
+        <li>
+           flex-end
+        </li>
+        <li>
+           space-around
+        </li>
+        <li>
+           space-between
+        </li>
+        <li>
+           space-evenly
+        </li>
+      </ul>
+      <ul>
+         align-items
+        <li>
+           center
+        </li>
+        <li>
+           flex-start
+        </li>
+        <li>
+           flex-end
+        </li>
+      </ul>
+      <div
+        className="prompt-property--container"
+      >
+        <ul>
+           flex-wrap:
+          <li>
+             wrap
+          </li>
+          <li>
+             wrap-reverse
+          </li>
+          <li>
+             nowrap
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p
+      className="prompt-body-title"
+    >
+      The fox will start with a justify-content and align-items of 
+      <span>
+        flex-start
+      </span>
+       and  will start with a flex-wrap of 
+      <span>
+        wrap
+      </span>
+       if these are part of the answer 
+      <span>
+        you will need to enter them in!
+      </span>
+    </p>
+  </div>
+</section>
+`;

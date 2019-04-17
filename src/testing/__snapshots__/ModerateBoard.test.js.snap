@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModerateBoard should match the snapshot with all data passed in 1`] = `
+<section
+  className="board--container"
+>
+  <section
+    className="fox--container"
+    style={
+      Object {
+        "alignItems": undefined,
+        "flexDirection": undefined,
+        "justifyContent": undefined,
+      }
+    }
+  >
+    <article
+      className="fox"
+    >
+      <img
+        alt="fox"
+        className="fox-img"
+        src="https://i.imgur.com/XnHxBnB.png"
+      />
+    </article>
+    <article
+      className="fox"
+    >
+      <img
+        alt="fox"
+        className="fox-img"
+        src="https://i.imgur.com/FmUqM1R.png"
+      />
+    </article>
+    <article
+      className="fox"
+    >
+      <img
+        alt="fox"
+        className="fox-img"
+        src="http://clipart-library.com/img/749202.png"
+      />
+    </article>
+  </section>
+  <section
+    className="box--container"
+    style={
+      Object {
+        "alignItems": undefined,
+        "flexDirection": undefined,
+        "justifyContent": undefined,
+      }
+    }
+  >
+    <article
+      className="box"
+    />
+    <article
+      className="box"
+    />
+    <article
+      className="box"
+    />
+  </section>
+</section>
+`;

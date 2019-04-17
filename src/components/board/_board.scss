@@ -1,54 +1,57 @@
-
-
+.board--container,
+.fox--container,
+.box--container,
+.fox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .board--container {
-    display: flex;
-    width: 35em;
-    height: 40em;
-    align-items: center;
-    justify-content: center;
-    background-position-y: -10.7em;
-    background-color: #65a565;
-    border-radius: 2%;
-    position: relative;
-    border: 0.5em #283149 solid;
-    
+  width: 30em;
+  height: 35em;
+  align-items: center;
+  background-color: #65a565;
+  border-radius: 2%;
+  position: relative;
+  border: 0.5em $darkBlue solid;
 }
 .fox--container {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 35em;
+  position: absolute;
 }
-.box--container {
-    display: flex;
-    width: 35em;
-    height: 35em;
+
+.box--container,
+.fox--container {
+  width: 100%;
+  height: 100%;
 }
+
 .fox {
-    width: 5.5em;
-    height: 5.5em;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    animation: shake 2s infinite linear;
-
+  width: 5.5em;
+  height: 5.5em;
+  align-items: center;
+  animation: shake 2s infinite linear;
 }
+
+.box,
 .fox-img {
-    height: 5em;
-    width: 5em;
+  height: 5em;
+  width: 5em;
 }
-.box {
-    width: 5em;
-    height: 5em;
-    border: 0.3em solid tan;
-    background-color: #A1884B;
 
+.box {
+  border: 0.3em solid tan;
+  background-color: #a1884b;
 }
 
 @keyframes shake {
-    0%{transform: translateY(0em)}
-    50%{transform: translateY(0.3em)}
-    100%{transform: translateY(0em)}
-
+  0% {
+    transform: translateY(0em);
+  }
+  50% {
+    transform: translateY(0.3em);
+  }
+  100% {
+    transform: translateY(0em);
+  }
 }
