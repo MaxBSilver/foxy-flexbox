@@ -10,7 +10,7 @@ export default class Answer extends Component {
       jcVal: "",
       acVal: "",
       fwVal: "",
-      btnColor: "#404b69"
+      btnColor: "$darkBlueBackground"
     };
   }
 
@@ -44,7 +44,7 @@ export default class Answer extends Component {
     ) {
       this.props.determineQuestion();
       this.props.incrementRound();
-      this.setState({ jcVal: "", acVal: "", btnColor: "#404b69", fwVal: "" });
+      this.setState({ jcVal: "", acVal: "", btnColor: "$darkBlueBackground", fwVal: "" });
     } else if (
       this.state.jcVal === this.props.justifyContent &&
       this.state.acVal === this.props.alignContent &&
@@ -52,7 +52,7 @@ export default class Answer extends Component {
     ) {
       this.props.determineQuestion();
       this.props.incrementRound();
-      this.setState({ jcVal: "", acVal: "", btnColor: "#404b69", fwVal: "" });
+      this.setState({ jcVal: "", acVal: "", btnColor: "$darkBlueBackground", fwVal: "" });
     }
   };
 

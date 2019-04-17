@@ -1,54 +1,64 @@
+.answer--container,
+.code-snippet--container,
+.user-form,
+form,
+.form--container,
+.input-one,
+.input-two,
+.input-three,
+.submit--container {
+  display: $displayFlex;
+  justify-content: $justifyContentCenter;
+}
+
+.input-one,
+.input-two,
+.input-three,
+.answer--container,
+.code-snippet--container {
+  align-items: $alignItemsCenter;
+}
+
+.user-form,
+form,
+.form--container {
+  justify-content: $justifyContentSpaceBetween;
+}
+
 .answer--container {
-  display: flex;
-  flex-direction: column;
   height: 90%;
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  flex-direction: $flexDirColumn;
   font-size: 1em;
 }
 .code-snippet--container {
-  background-color: #dbedf3;
+  background-color: $lightBlueBackground;
   width: 28em;
-  padding: 1em;
   border: 0.5em $darkBlue solid;
   border-radius: 1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .user-form {
-  display: flex;
-  flex-direction: column;
-  align-items: space-between;
-  justify-content: space-between;
   margin-left: 1em;
   font-family: "Source Code Pro", monospace;
+  flex-direction: $flexDirColumn;
 }
 form {
   width: 80%;
   padding: 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: $flexDirColumn;
 }
 .form--container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  align-items: space-between;
-  justify-content: space-between;
-  background-color: lightgrey;
+  background-color: $lightGrey;
   border-radius: 0.3em;
   padding: 0.5em;
-  border: 0.08em  #404b69 solid;
+  border: 0.08em $darkBlueBackground solid;
+  flex-direction: $flexDirColumn;
 }
 
 .input-one,
 .input-two,
 .input-three {
-  display: flex;
-  align-items: center;
+  justify-content: $justifyContentFlexStart;
 }
 
 .code-snippet--title {
@@ -60,25 +70,24 @@ form {
   margin: 0.2em 0.5em;
   min-width: 8em;
 }
+.search-input,
+.search-btn,
+.search-btn:focus {
+  background-color: $darkBlueBackground;
+  color: $lightBlueBackground;
+}
 
 .search-btn,
 .search-btn:focus {
   width: 4em;
   border-radius: 2em;
-  background-color: #404b69;
-  border: 3px solid $darkBlue;
-  color: #dbedf3;
+  border: $darkBlueBorder;
   outline: none;
 }
 
 .search-input {
   border: 0.1em solid $darkBlue;
-  background-color: #404b69;
-  color: #dbedf3;
   width: 8em;
-}
-.search-btn {
-  background-color: red;
 }
 
 .search-input:focus {
@@ -86,7 +95,6 @@ form {
 }
 
 .submit--container {
-  display: flex;
-  justify-content: flex-end;
   padding-top: 0.5em;
+  justify-content: $justifyContentFlexEnd;
 }

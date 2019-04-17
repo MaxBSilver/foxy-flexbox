@@ -1,3 +1,24 @@
-$fa-font-path:        "../webfonts";
+$fa-font-path: "../webfonts";
 
+// ! Colors
 $darkBlue: #283149;
+$darkBlueBackground: #404b69;
+$lightBlueBackground: #dbedf3;
+$lightGrey: lightgrey;
+$darkBlueBorder : 3px solid $darkBlue;
+
+// ! Flex
+$displayFlex : flex;
+// Direction
+$flexDirColumn: column;
+// Align-items
+$alignItemsCenter: center;
+// Justify Content
+$justifyContentCenter: center;
+$justifyContentSpaceBetween: space-between;
+$justifyContentFlexStart: flex-start;
+$justifyContentFlexEnd: flex-end;
+$justifyContentSpaceAround: space-around;
+
+// ! Misc 
+$borderRadius : 2em 0em 0em 2em;

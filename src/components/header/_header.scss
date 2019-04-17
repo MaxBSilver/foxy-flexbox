@@ -1,15 +1,18 @@
+header,
+h1.header-title {
+  align-items: $alignItemsCenter;
+}
+
 header {
   height: 4em;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  display: $displayFlex;
+  justify-content: $justifyContentFlexStart;
   background-color: $darkBlue;
 }
 
 h1.header-title {
   font-size: 3.5em;
-  display: flex;
-  align-items: center;
+  display: $displayFlex;
   color: whitesmoke;
 }
 

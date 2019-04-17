@@ -1,96 +1,93 @@
-.prompt--container, 
-.prompt-head--container, 
-.prompt-button--container  {
-    display: flex;
+.prompt--container,
+.prompt-head--container,
+.prompt-button--container {
+  display: $displayFlex;;
 }
 
 .prompt--container {
-    flex-direction: column;
-    margin: 2em;
-    height: 70%;
-    padding: 1.5em;
-    background-color: #dbedf3;
-    border-radius: 1em;
-    border: 0.5em $darkBlue solid;
-    justify-content: center;
+  flex-direction: $flexDirColumn;
+  margin: 2em;
+  height: 70%;
+  padding: 1.5em;
+  background-color: $lightBlueBackground;
+  border-radius: 1em;
+  border: 0.5em $darkBlue solid;
+  justify-content: $justifyContentCenter;
 }
+
 .prompt-head--container {
-    justify-content: space-between
+  justify-content: $justifyContentSpaceBetween;
 }
 .prompt-button--container {
-    justify-content: flex-end;
-    background-color: #404b69;
-    border-radius: 2em;
-    border: 3px solid $darkBlue;
-    color: #dbedf3
+  justify-content: $justifyContentFlexEnd;
+  background-color: $darkBlueBackground;
+  border-radius: 2em;
+  border: $darkBlueBorder;
+  color: $lightBlueBackground;
 }
 .prompt-next-button,
 .prompt-previous-button {
-    width: 2em;
-    background-color: transparent;
-    border: none;
-    outline: 0;
-    color: #dbedf3;
+  width: 2em;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  color: $lightBlueBackground;
 }
 
 .prompt-next-button {
-    border-left: 3px solid $darkBlue;
+  border-left: $darkBlueBorder;
 }
 .prompt-previous-button {
-    border-right: 3px solid $darkBlue;
+  border-right: $darkBlueBorder;
 }
 .prompt-next-button:hover {
-    border-radius: 0em 2em 2em 0em;
-    border-left: 3px solid $darkBlue;
-
-
+  border-radius: 0em 2em 2em 0em;
+  border-left: $darkBlueBorder;
 }
+
 button:hover,
 input:hover,
-input:focus{
-    background-color: rgb(78, 91, 128);
+input:focus {
+  background-color: rgb(78, 91, 128);
 }
 .prompt-previous-button:hover {
-    border-radius: 2em 0em 0em 2em;
-    border-right: 3px solid $darkBlue;
-
+  border-radius: $borderRadius;
+  border-right: $darkBlueBorder;
 }
 .prompt-previous-button:focus {
-    border-radius: 2em 0em 0em 2em;
-    border-right: 3px solid $darkBlue;
+  border-radius: $borderRadius;
+  border-right: $darkBlueBorder;
 }
 .prompt-next-button:focus {
-    border-left: 3px solid $darkBlue;
-
+  border-left: $darkBlueBorder;
 }
 
 .prompt-button--container h3 {
-    margin: 0 0.5em;
+  margin: 0 0.5em;
 }
 
 .prompt-property--container {
-    display: flex;
-    align-items:flex-start;
-    justify-content: space-around;
+  display: $displayFlex;;
+  align-items: flex-start;
+  justify-content: $justifyContentSpaceAround;
 }
 
 .prompt-body-title span {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 li {
-    list-style: none;
-    margin: 0.5em;;
-    color: #404b69;
-    padding-left: 1em;
-    background-color: rgba(107, 107, 107, 0.2);
-    font-size: 1em;
-    font-weight: bold;
-    outline: 0.08em  #404b69 solid;
-    width: 8em;
+  list-style: none;
+  margin: 0.5em;
+  color: $darkBlueBackground;
+  padding-left: 1em;
+  background-color: rgba(107, 107, 107, 0.2);
+  font-size: 1em;
+  font-weight: bold;
+  outline: 0.08em $darkBlueBackground solid;
+  width: 8em;
 }
 
-.prompt-body-title{
-    margin: 1em 0;
-
+.prompt-body-title {
+  margin: 1em 0;
 }
