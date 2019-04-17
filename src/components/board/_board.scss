@@ -2,7 +2,7 @@
 .fox--container,
 .box--container,
 .fox {
-  display: flex;
+  display: $displayFlex;;
   flex-wrap: wrap;
   justify-content: $justifyContentCenter;
 }

@@ -1,6 +1,6 @@
 header {
   height: 4em;
-  display: flex;
+  display: $displayFlex;;
   justify-content: $justifyContentFlexStart;
   align-items: $alignItemsCenter;
   background-color: $darkBlue;
@@ -8,7 +8,7 @@ header {
 
 h1.header-title {
   font-size: 3.5em;
-  display: flex;
+  display: $displayFlex;;
   align-items: $alignItemsCenter;
   color: whitesmoke;
 }

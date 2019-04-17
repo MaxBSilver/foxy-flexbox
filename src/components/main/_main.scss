@@ -1,35 +1,29 @@
 main {
-    display: grid;
-    grid-template-columns: 50% 50%;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
-.right--container, .left--container {
-    display: flex;
-    justify-content: $justifyContentCenter;
-    flex-direction: $flexDirColumn;
+.right--container,
+.left--container {
+  display: $displayFlex;
+  justify-content: $justifyContentCenter;
+  flex-direction: $flexDirColumn;
 }
 
 .right--container {
-     align-items: $alignItemsCenter;
-     margin-top: 1em;
+  align-items: $alignItemsCenter;
+  margin-top: 1em;
 }
 
-
 @media only screen and (max-width: 1080px) {
-    main {
-        grid-template-columns: 100%;
-    }
-    .prompt--container,
-    .answer--container {
-    }
-    .left--container {
-        align-items: $alignItemsCenter;
-        flex-direction: inline;
-    }
-    .answer--container {
-        width: 70%;
-    }
+  main {
+    grid-template-columns: 100%;
   }
-
-
-
+  .left--container {
+    align-items: $alignItemsCenter;
+    flex-direction: inline;
+  }
+  .answer--container {
+    width: 70%;
+  }
+}
