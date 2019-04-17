@@ -31,7 +31,8 @@ export default function Prompt(props) {
           <span>CSS properties : </span>
         </p>
         <div className="prompt-property--container">
-          <ul> justify-content
+          <ul>
+            justify-content
             <li> center</li>
             <li> flex-start</li>
             <li> flex-end</li>
@@ -39,20 +40,27 @@ export default function Prompt(props) {
             <li> space-between</li>
             <li> space-evenly</li>
           </ul>
-          <ul> align-items
+          <ul>
+            align-items
             <li> center</li>
             <li> flex-start</li>
             <li> flex-end</li>
           </ul>
           <div className="prompt-property--container">
-          <ul> flex-wrap: 
-            <li> wrap</li>
-            <li> wrap-reverse</li>
-            <li> nowrap</li>
-          </ul>
+            <ul>
+              flex-wrap:
+              <li> wrap</li>
+              <li> wrap-reverse</li>
+              <li> nowrap</li>
+            </ul>
+          </div>
         </div>
-        </div>
-        <p className="prompt-body-title">The fox will start with a justify-content and align-items of <span>flex-start</span> and  will start with a flex-wrap of <span>wrap</span> if these are part of the answer <span>you will need to enter them in!</span></p>
+        <p className="prompt-body-title">
+          The fox will start with a justify-content and align-items of{" "}
+          <span>flex-start</span> and will start with a flex-wrap of{" "}
+          <span>wrap</span> if these are part of the answer{" "}
+          <span>you will need to enter them in!</span>
+        </p>
       </div>
     </section>
   );
