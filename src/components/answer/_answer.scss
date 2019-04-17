@@ -76,7 +76,7 @@ form {
 .search-btn:focus {
   width: 4em;
   border-radius: 2em;
-  border: 3px solid $darkBlue;
+  border: $darkBlueBorder;
   outline: none;
 }
 
