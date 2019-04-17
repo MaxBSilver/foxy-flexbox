@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![game](https://i.imgur.com/m8HLqhs.png)
 
 ## Available Scripts
 
