@@ -7,8 +7,16 @@ form,
 .input-two,
 .input-three,
 .submit--container {
-  display: $displayFlex;;
+  display: $displayFlex;
   justify-content: $justifyContentCenter;
+}
+
+.input-one,
+.input-two,
+.input-three,
+.answer--container,
+.code-snippet--container {
+  align-items: $alignItemsCenter;
 }
 
 .user-form,
@@ -18,10 +26,9 @@ form,
 }
 
 .answer--container {
-  flex-direction: $flexDirColumn;
   height: 90%;
   width: 100%;
-  align-items: $alignItemsCenter;
+  flex-direction: $flexDirColumn;
   font-size: 1em;
 }
 .code-snippet--container {
@@ -29,12 +36,11 @@ form,
   width: 28em;
   border: 0.5em $darkBlue solid;
   border-radius: 1em;
-  align-items: $alignItemsCenter;
 }
 .user-form {
-  flex-direction: $flexDirColumn;
   margin-left: 1em;
   font-family: "Source Code Pro", monospace;
+  flex-direction: $flexDirColumn;
 }
 form {
   width: 80%;
@@ -42,17 +48,16 @@ form {
   flex-direction: $flexDirColumn;
 }
 .form--container {
-  flex-direction: $flexDirColumn;
   background-color: $lightGrey;
   border-radius: 0.3em;
   padding: 0.5em;
   border: 0.08em $darkBlueBackground solid;
+  flex-direction: $flexDirColumn;
 }
 
 .input-one,
 .input-two,
 .input-three {
-  align-items: $alignItemsCenter;
   justify-content: $justifyContentFlexStart;
 }
 
@@ -90,6 +95,6 @@ form {
 }
 
 .submit--container {
-  justify-content: $justifyContentFlexEnd;
   padding-top: 0.5em;
+  justify-content: $justifyContentFlexEnd;
 }
