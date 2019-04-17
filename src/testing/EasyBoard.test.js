@@ -1,5 +1,5 @@
 import React from 'react';
-import EasyBoard from '../components/answer/Answer';
+import EasyBoard from '../components/board/easy-board/EasyBoard';
 import { shallow } from 'enzyme';
 describe('EasyBoard', () => {
     let wrapper;

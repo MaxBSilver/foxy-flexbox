@@ -8,8 +8,7 @@ export default function HardBoard(props) {
   const boxJustify = props.justifyContent;
   const boxWrap = props.flexWrap;
   const foxWrap = props.userGuessThree;
-  console.log(boxWrap)
- 
+
   return (
     <section className="board--container">
       <section

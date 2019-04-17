@@ -11,7 +11,7 @@
   background-color: #dbedf3;
   width: 28em;
   padding: 1em;
-  border: 0.5em #283149 solid;
+  border: 0.5em $darkBlue solid;
   border-radius: 1em;
   display: flex;
   justify-content: center;
@@ -66,13 +66,13 @@ form {
   width: 4em;
   border-radius: 2em;
   background-color: #404b69;
-  border: 3px solid #283149;
+  border: 3px solid $darkBlue;
   color: #dbedf3;
   outline: none;
 }
 
 .search-input {
-  border: 0.1em solid #283149;
+  border: 0.1em solid $darkBlue;
   background-color: #404b69;
   color: #dbedf3;
   width: 8em;

@@ -1,12 +1,12 @@
 import React from 'react';
-import ModerateBoard from '../components/board/moderate-board/ModerateBoard';
+import EasySnippet from '../components/answer/EasySnippet';
 import { shallow } from 'enzyme';
-describe('ModerateBoard', () => {
+describe('EasySnippet', () => {
     let wrapper;
   
     beforeEach(() => {
       wrapper = shallow(
-        <ModerateBoard
+        <EasySnippet
         />
       );
     });

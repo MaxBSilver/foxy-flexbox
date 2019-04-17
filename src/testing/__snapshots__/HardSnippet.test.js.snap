@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EasySnippet should match the snapshot with all data passed in 1`] = `
+<div
+  className="input-three"
+>
+  <p
+    className="code-prompt"
+  >
+     flex-wrap : 
+  </p>
+  <input
+    className="search-input"
+    name="fwVal"
+    placeholder=""
+    type="text"
+  />
+</div>
+`;

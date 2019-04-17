@@ -16,8 +16,6 @@ export default class Answer extends Component {
 
   handleChange = e => {
     const { value, name } = e.target;
-    console.log(this.props.flexDirection);
-    // set it to add an input to render an additional input if id is over 20
     this.setState({ [name]: value }, () => {
       this.props.updateUserAnswer(this.state);
       if (
@@ -37,6 +35,7 @@ export default class Answer extends Component {
   };
 
   handleSubmit = e => {
+    //todo deconstruct
     e.preventDefault();
     if (
       this.props.id < 21 &&

@@ -31,7 +31,47 @@
     "not op_mini all"
   ],
   "jest": {
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!/node_modules/",
+      "!src/index.js",
+      "!src/registerServiceWorker.js",
+      "!src/serviceWorker.js",
+      "!src/fontAwesome.js",
+      "!src/all.js",
+      "!src/all.min.js",
+      "!src/fontAwesome/js/all.js",
+      "!src/fontAwesome/js/all.min.js",
+      "!src/fontAwesome/js/brands.js",
+      "!src/fontAwesome/js/brands.min.js",
+      "!src/fontAwesome/js/fontawesome.js",
+      "!src/fontAwesome/js/fontawesome.min.js",
+      "!src/fontAwesome/js/regular.js",
+      "!src/fontAwesome/js/regular.min.js",
+      "!src/fontAwesome/js/solid.js",
+      "!src/fontAwesome/js/solid.min.js",
+      "!src/fontAwesome/js/v4-shims.js",
+      "!src/fontAwesome/js/v4-shims.min.js",
+      "!src/fontAwesome/js"
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]
+
   },
   "devDependencies": {
     "enzyme": "^3.9.0",

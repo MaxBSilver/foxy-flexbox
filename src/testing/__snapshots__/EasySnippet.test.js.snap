@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EasySnippet should match the snapshot with all data passed in 1`] = `
+<Fragment>
+  <div
+    className="input-one"
+  >
+    <p
+      className="code-prompt"
+    >
+       justify-content : 
+    </p>
+    <input
+      className="search-input"
+      name="jcVal"
+      placeholder=""
+      type="text"
+    />
+  </div>
+  <div
+    className="input-two"
+  >
+    <p
+      className="code-prompt"
+    >
+       align-items : 
+    </p>
+    <input
+      className="search-input"
+      name="acVal"
+      placeholder=""
+      type="text"
+    />
+  </div>
+</Fragment>
+`;

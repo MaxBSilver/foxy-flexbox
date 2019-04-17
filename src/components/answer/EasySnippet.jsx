@@ -15,7 +15,7 @@ export default function EasySnippet(props) {
         />
       </div>
       <div className="input-two">
-        <p className="code-prompt"> align-content : </p>
+        <p className="code-prompt"> align-items : </p>
         <input
           type="text"
           className="search-input"

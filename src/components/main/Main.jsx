@@ -2,7 +2,6 @@ import React from "react";
 import Answer from "../answer/Answer";
 import Board from "../board/Board";
 import Prompt from "../prompt/Prompt";
-import { faMoneyBillWaveAlt } from "@fortawesome/free-solid-svg-icons";
 
 
 class Main extends React.Component {

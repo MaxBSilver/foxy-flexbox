@@ -1,24 +1,27 @@
-.prompt--container {
+.prompt--container, 
+.prompt-head--container, 
+.prompt-button--container  {
     display: flex;
+}
+
+.prompt--container {
     flex-direction: column;
     margin: 2em;
     height: 70%;
     padding: 1.5em;
     background-color: #dbedf3;
     border-radius: 1em;
-    border: 0.5em #283149 solid;
+    border: 0.5em $darkBlue solid;
     justify-content: center;
 }
 .prompt-head--container {
-    display:flex;
     justify-content: space-between
 }
 .prompt-button--container {
-    display: flex;
     justify-content: flex-end;
     background-color: #404b69;
     border-radius: 2em;
-    border: 3px solid #283149;
+    border: 3px solid $darkBlue;
     color: #dbedf3
 }
 .prompt-next-button,
@@ -31,14 +34,14 @@
 }
 
 .prompt-next-button {
-    border-left: 3px solid #283149;
+    border-left: 3px solid $darkBlue;
 }
 .prompt-previous-button {
-    border-right: 3px solid #283149;
+    border-right: 3px solid $darkBlue;
 }
 .prompt-next-button:hover {
     border-radius: 0em 2em 2em 0em;
-    border-left: 3px solid #283149;
+    border-left: 3px solid $darkBlue;
 
 
 }
@@ -49,15 +52,15 @@ input:focus{
 }
 .prompt-previous-button:hover {
     border-radius: 2em 0em 0em 2em;
-    border-right: 3px solid #283149;
+    border-right: 3px solid $darkBlue;
 
 }
 .prompt-previous-button:focus {
     border-radius: 2em 0em 0em 2em;
-    border-right: 3px solid #283149;
+    border-right: 3px solid $darkBlue;
 }
 .prompt-next-button:focus {
-    border-left: 3px solid #283149;
+    border-left: 3px solid $darkBlue;
 
 }
 

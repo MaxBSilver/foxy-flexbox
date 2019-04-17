@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EasyBoard should match the snapshot with all data passed in 1`] = `
+<section
+  className="board--container"
+  style={
+    Object {
+      "flexDirection": undefined,
+    }
+  }
+>
+  <section
+    className="fox--container"
+    style={
+      Object {
+        "alignItems": undefined,
+        "justifyContent": undefined,
+      }
+    }
+  >
+    <article
+      className="fox"
+    >
+      <img
+        alt="fox"
+        className="fox-img"
+        src="https://i.imgur.com/XnHxBnB.png"
+      />
+    </article>
+  </section>
+  <section
+    className="box--container"
+    style={
+      Object {
+        "alignItems": undefined,
+        "flexWrap": undefined,
+        "justifyContent": undefined,
+      }
+    }
+  >
+    <article
+      className="box"
+    />
+  </section>
+</section>
+`;

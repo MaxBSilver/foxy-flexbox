@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Answer should match the snapshot with all data passed in 1`] = `
+<section
+  className="answer--container"
+>
+  <section
+    className="code-snippet--container"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="form--container"
+      >
+        <p
+          className="code-snippet--title"
+        >
+           #garden
+           {
+           
+        </p>
+        <div
+          className="user-form"
+        >
+          <p
+            className="code-snippet--body"
+          >
+            display : flex;
+          </p>
+          <p
+            className="code-snippet--body"
+          >
+            flex-direction: 
+            row
+            ;
+          </p>
+          <EasySnippet
+            acVal=""
+            btnColor="#404b69"
+            fwVal=""
+            handleChange={[Function]}
+            jcVal=""
+          />
+          <p
+            className="code-snippet--title"
+          >
+            }
+          </p>
+        </div>
+        <div
+          className="submit--container"
+        >
+          <input
+            className="search-btn"
+            style={
+              Object {
+                "backgroundColor": "#404b69",
+              }
+            }
+            type="submit"
+            value="Next"
+          />
+        </div>
+      </div>
+    </form>
+  </section>
+</section>
+`;
