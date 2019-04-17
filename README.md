@@ -26,7 +26,7 @@ Libraries
 * Users learn how to use CSS flexbox justify-content, align-items, and flex-wrap.
 
 ## Testing
-Run npm in the directory ``` npm install ```
+Run npm in the directory ``` npm install ``` <br>
 To check test coverage run ``` npm test -- --coverage ```
 
 ## Available Scripts
