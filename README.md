@@ -28,7 +28,7 @@ Libraries
 ## Testing
 * Run npm in the directory ``` npm install ``` <br>
 * To check test coverage run ``` npm test -- --coverage ```
-![current testing coverage] url(https://i.imgur.com/L84XB3z.png)
+![current testing coverage](https://i.imgur.com/L84XB3z.png)
 
 ## Available Scripts
 
