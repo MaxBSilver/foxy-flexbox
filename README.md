@@ -25,6 +25,10 @@ Libraries
 * Over 25 levels of interactive gameplay.
 * Users learn how to use CSS flexbox justify-content, align-items, and flex-wrap.
 
+## Testing
+Run npm in the directory ``` npm install ```
+To check test coverage run ``` npm test -- --coverage ```
+
 ## Available Scripts
 
 In the project directory, you can run:
