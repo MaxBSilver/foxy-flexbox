@@ -37,7 +37,7 @@ exports[`Answer should match the snapshot with all data passed in 1`] = `
           </p>
           <EasySnippet
             acVal=""
-            btnColor="#404b69"
+            btnColor="$darkBlueBackground"
             fwVal=""
             handleChange={[Function]}
             jcVal=""
@@ -55,7 +55,7 @@ exports[`Answer should match the snapshot with all data passed in 1`] = `
             className="search-btn"
             style={
               Object {
-                "backgroundColor": "#404b69",
+                "backgroundColor": "$darkBlueBackground",
               }
             }
             type="submit"

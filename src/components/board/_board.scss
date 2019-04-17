@@ -4,12 +4,12 @@
 .fox {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: $justifyContentCenter;
 }
 
 .fox,
 .board--container {
-  align-items: center;
+  align-items: $alignItemsCenter;
 }
 
 .board--container {

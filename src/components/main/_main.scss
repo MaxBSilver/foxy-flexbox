@@ -5,12 +5,13 @@ main {
 
 .right--container, .left--container {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: $justifyContentCenter;
+    flex-direction: $flexDirColumn;
 }
 
 .right--container {
-     align-items: center;
+     align-items: $alignItemsCenter;
+     margin-top: 1em;
 }
 
 
@@ -22,7 +23,7 @@ main {
     .answer--container {
     }
     .left--container {
-        align-items: center;
+        align-items: $alignItemsCenter;
         flex-direction: inline;
     }
     .answer--container {

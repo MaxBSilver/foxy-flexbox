@@ -5,24 +5,24 @@
 }
 
 .prompt--container {
-    flex-direction: column;
+    flex-direction: $flexDirColumn;
     margin: 2em;
     height: 70%;
     padding: 1.5em;
-    background-color: #dbedf3;
+    background-color: $lightBlueBackground;
     border-radius: 1em;
     border: 0.5em $darkBlue solid;
-    justify-content: center;
+    justify-content: $justifyContentCenter;
 }
 .prompt-head--container {
-    justify-content: space-between
+    justify-content: $justifyContentSpaceBetween 
 }
 .prompt-button--container {
-    justify-content: flex-end;
-    background-color: #404b69;
+    justify-content: $justifyContentFlexEnd;
+    background-color: $darkBlueBackground;
     border-radius: 2em;
     border: 3px solid $darkBlue;
-    color: #dbedf3
+    color: $lightBlueBackground
 }
 .prompt-next-button,
 .prompt-previous-button {
@@ -30,7 +30,7 @@
     background-color: transparent;
     border: none;
     outline: 0;
-    color: #dbedf3;
+    color: $lightBlueBackground;
 }
 
 .prompt-next-button {
@@ -81,12 +81,12 @@ input:focus{
 li {
     list-style: none;
     margin: 0.5em;;
-    color: #404b69;
+    color: $darkBlueBackground;
     padding-left: 1em;
     background-color: rgba(107, 107, 107, 0.2);
     font-size: 1em;
     font-weight: bold;
-    outline: 0.08em  #404b69 solid;
+    outline: 0.08em  $darkBlueBackground solid;
     width: 8em;
 }
 
