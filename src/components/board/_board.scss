@@ -7,15 +7,20 @@
   justify-content: center;
 }
 
+.fox,
+.board--container {
+  align-items: center;
+}
+
 .board--container {
   width: 30em;
   height: 35em;
-  align-items: center;
   background-color: #65a565;
   border-radius: 2%;
   position: relative;
   border: 0.5em $darkBlue solid;
 }
+
 .fox--container {
   position: absolute;
 }
@@ -29,7 +34,6 @@
 .fox {
   width: 5.5em;
   height: 5.5em;
-  align-items: center;
   animation: shake 2s infinite linear;
 }
 
